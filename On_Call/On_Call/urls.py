@@ -21,6 +21,7 @@ from WhoIsOnCall import views  # add this
 
 router = routers.DefaultRouter()  # add this
 router.register(r'organisations', views.OrganisationView, 'Organisation')
+router.register(r'profile', views.ProfileView, 'Profile')
 
 
 urlpatterns = [
